@@ -1,0 +1,15 @@
+body {
+    background: black;
+      height: 800px;
+}
+
+#clock {
+   
+   text-align: center;
+   color: blue;
+ padding-top: 250px;
+  font-size : 80px;
+  letter-spacing: 4px;
+  font-family: 'Orbitron', sans-serif;
+
+}
