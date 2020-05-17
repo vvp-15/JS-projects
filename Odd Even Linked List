@@ -1,0 +1,25 @@
+var oddEvenList = function(head) {
+    if(!head || !(head.next)) return head;
+    var h_odd = new ListNode();
+    var h_even = new ListNode();
+    var odd = new ListNode();
+    var even = new ListNode();
+    h_odd = odd = head;
+    h_even =even= head.next;
+    while(even)
+   {
+        if(even.next!=null)
+        {
+            odd.next = even.next;
+            odd = odd.next;
+            }
+       else{
+           odd.next =  h_even;
+           return h_odd;
+       }
+            even.next=odd.next;
+            even = even.next;
+    }
+    odd.next = h_even;
+    return h_odd;
+};
